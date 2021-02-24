@@ -1,0 +1,19 @@
+CREATE TABLE public.mercancia (
+	mercancia_id int NOT NULL,
+	mercancia_nombre varchar(255) NOT NULL,
+	mercancia_cantidad int NOT NULL,
+	mercancia_usercreacion varchar(255) NOT NULL,
+	mercancia_fechcreacion timestamp(0) NOT NULL,
+	mercancia_usermodificacion varchar(255) NOT NULL,
+	mercancia_fechmodificacion timestamp(0) NOT NULL
+);
+
+-- Column comments
+
+COMMENT ON COLUMN public.mercancia.mercancia_id IS 'Id de la Mercancía';
+COMMENT ON COLUMN public.mercancia.mercancia_nombre IS 'Nombre de la Mercancía';
+COMMENT ON COLUMN public.mercancia.mercancia_cantidad IS 'Cantidad de la Mercancía';
+COMMENT ON COLUMN public.mercancia.mercancia_usercreacion IS 'Usuario de Creación que crea la Mercacía';
+COMMENT ON COLUMN public.mercancia.mercancia_fechcreacion IS 'Fecha de Creación de la Mercancía';
+COMMENT ON COLUMN public.mercancia.mercancia_usermodificacion IS 'Usuario de Modificación de la Mercancía';
+COMMENT ON COLUMN public.mercancia.mercancia_fechmodificacion IS 'Fecha de Modificación de la Mercancía';
